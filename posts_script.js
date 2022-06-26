@@ -21,3 +21,46 @@ for (let x = 0; x < elementVideos.length; x++){
         this.pause();
     })
 };
+
+var screenWidth = window.screen.width;
+var clicked = false;
+
+// get the pause, play buttons
+var pause = document.getElementsByClassName("buttons pause");
+var play = document.getElementsByClassName("buttons play");
+
+for (let y = 0; y < pause.length; y++){
+    pause[y].style.display = "initial";
+}
+
+
+
+if (screenWidth <= 500){
+    for (let x=0;x<elementVideos.length;x++){
+        elementVideos[x].pause();
+        elementVideos[x].addEventListener("click",function(){
+            if (!clicked){
+                this.play();
+                clicked = true;
+                changePlayStatus();
+                
+            } else {
+                this.pause();
+                clicked = false;
+                changePlayStatus();
+            }
+        });
+    }
+}
+
+function changePlayStatus(){
+    for (let x = 0; x < pause.length; x++){
+        if (!clicked){
+            pause[x].style.display = "initial";
+            play[x].style.display = "none";
+        } else {
+            pause[x].style.display = "none";
+            play[x].style.display = "initial";
+        }
+    }
+}
