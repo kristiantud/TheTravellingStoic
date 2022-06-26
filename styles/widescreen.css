@@ -40,7 +40,7 @@ html, body{
     color: white;
 }
 
-#video_background{
+/* #video_background{
     object-fit: fill;
     -o-object-position: center center;
     object-position: center center;
@@ -53,7 +53,7 @@ html, body{
     left: 0;
     
 
-}
+} */
 
 
 .destinations{

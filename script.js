@@ -36,6 +36,13 @@ for (let x = 0; x < elementVideos.length; x++){
     });
 };
 
+var screenWidth = window.screen.width;
+
+if (screenWidth <= 500){
+    for (let x=0;x<elementVideos.length;x++){
+        elementVideos[x].get(0).play();
+    }
+}
 // figure.on('mouseenter', function(){
 //     figure.get(0).play();
 // });
