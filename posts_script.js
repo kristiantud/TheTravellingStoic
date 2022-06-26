@@ -42,25 +42,29 @@ if (screenWidth <= 500){
             if (!clicked){
                 this.play();
                 clicked = true;
-                changePlayStatus();
+                changePlayStatus(x);
                 
             } else {
                 this.pause();
                 clicked = false;
-                changePlayStatus();
+                changePlayStatus(x);
             }
         });
     }
 }
 
-function changePlayStatus(){
+function changePlayStatus(symbolIndex){
     for (let x = 0; x < pause.length; x++){
-        if (!clicked){
-            pause[x].style.display = "initial";
-            play[x].style.display = "none";
-        } else {
-            pause[x].style.display = "none";
-            play[x].style.display = "initial";
+        if (x == symbolIndex){
+            if (!clicked){
+                pause[x].style.display = "initial";
+                play[x].style.display = "none";
+            } else {
+                pause[x].style.display = "none";
+                play[x].style.display = "initial";
+            }
         }
+        
     }
+    
 }
