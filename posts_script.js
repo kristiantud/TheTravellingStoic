@@ -35,23 +35,23 @@ for (let y = 0; y < pause.length; y++){
 
 
 
-if (screenWidth <= 500){
-    for (let x=0;x<elementVideos.length;x++){
-        elementVideos[x].pause();
-        elementVideos[x].addEventListener("click",function(){
-            if (!clicked){
-                this.play();
-                clicked = true;
-                changePlayStatus(x);
-                
-            } else {
-                this.pause();
-                clicked = false;
-                changePlayStatus(x);
-            }
-        });
-    }
+
+for (let x=0;x<elementVideos.length;x++){
+    elementVideos[x].pause();
+    elementVideos[x].addEventListener("click",function(){
+        if (!clicked){
+            this.play();
+            clicked = true;
+            changePlayStatus(x);
+            
+        } else {
+            this.pause();
+            clicked = false;
+            changePlayStatus(x);
+        }
+    });
 }
+
 
 function changePlayStatus(symbolIndex){
     for (let x = 0; x < pause.length; x++){

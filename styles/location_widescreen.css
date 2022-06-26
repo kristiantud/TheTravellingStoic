@@ -63,3 +63,7 @@ html,body {
     object-position: center center;
     background-repeat: no-repeat;
 }
+
+.buttons_wrapper{
+    display: none;
+}
