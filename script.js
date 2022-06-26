@@ -22,10 +22,11 @@ const fonts = [
 var montreal = $("#montreal_video");
 var toronto = $("#toronto_video");
 var calgary = $("#calgary_video");
+
 const elementVideos = [
     montreal,toronto,calgary
 ];
-
+console.log(elementVideos);
 for (let x = 0; x < elementVideos.length; x++){
     elementVideos[x].on('mouseenter',function(){
         elementVideos[x].get(0).play();
