@@ -2,10 +2,17 @@ html,body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    background-color: rgb(12, 12, 12);
+    background-color: #0c0c0c;
     text-align: center;
 }
 
+.header.montreal{
+    background:  linear-gradient(to bottom, #6d5f50, #293628, #0c0c0c);
+}
+
+.header.toronto{
+    background: linear-gradient(to bottom, #4598d6,#91665e,#2e2a41, #0c0c0c);
+}
 
 .image_wrapper{
     margin: 0 15%;
@@ -15,6 +22,7 @@ html,body {
 #location_image{
     height: auto;
     width: 100%;
+    box-shadow: #0c0c0c 15px 15px 15px;
 
 }
 
