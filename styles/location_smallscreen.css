@@ -7,11 +7,15 @@ html,body {
 }
 
 
+.image_wrapper{
+    margin: 0 15%;
+    padding-top: 15%;
+}
+
 #location_image{
     height: auto;
-    width: 350px;
-    margin:auto;
-    padding-top: 30px;
+    width: 100%;
+
 }
 
 
@@ -69,6 +73,7 @@ html,body {
     height: auto;
     width: 100%;
     margin-bottom: 10px;
+    break-inside: avoid;
 }
 
 .media_post_item img{
