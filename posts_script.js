@@ -15,15 +15,20 @@ for (let x = 0; x < elementVideos.length; x++){
 
     elementVideos[x].addEventListener("mouseover",function(){
         this.play();
+        hovered = true;
+        changePlayStatusDesktop(x);
         
     })
     elementVideos[x].addEventListener("mouseleave",function(){
         this.pause();
+        hovered = false;
+        changePlayStatusDesktop(x);
     })
 };
 
 var screenWidth = window.screen.width;
 var clicked = false;
+var hovered = false;
 
 // get the pause, play buttons
 var pause = document.getElementsByClassName("buttons pause");
@@ -65,6 +70,21 @@ function changePlayStatus(symbolIndex){
             }
         }
         
+        
     }
     
+}
+
+function changePlayStatusDesktop(symbolIndex){
+    for (let x=0; x< pause.length; x++){
+        if (x == symbolIndex){
+            if (!hovered){
+                pause[x].style.display = "initial";
+                play[x].style.display = "none";
+            } else {
+                pause[x].style.display = "none";
+                play[x].style.display = "initial";
+            }
+        }
+    }
 }
