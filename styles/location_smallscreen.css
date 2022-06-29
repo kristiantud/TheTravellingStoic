@@ -14,6 +14,11 @@ html,body {
     background: linear-gradient(to bottom, #4598d6,#91665e,#2e2a41, #0c0c0c);
 }
 
+.header.calgary{
+    background: linear-gradient(to bottom, #5e758f,#6e4824,#21191c, #0c0c0c);
+
+}
+
 .image_wrapper{
     margin: 0 15%;
     padding-top: 15%;
@@ -22,7 +27,7 @@ html,body {
 #location_image{
     height: auto;
     width: 100%;
-    box-shadow: #0c0c0c 15px 15px 15px;
+    box-shadow: #0c0c0c 0 0 30px 5px;
 
 }
 

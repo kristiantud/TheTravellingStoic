@@ -13,14 +13,18 @@ html, body{
 }
 
 .video_wrapper{
-    max-height: 100vh;
+    height: 100vh;
     /* display: table; */
+    background-color: rgba(0,0,0,0.55);
+    
 }
 
 .hero_wrapper{
     text-align: center;
-    background-color: rgba(0,0,0,0.85);
+    
     height: 100vh;
+    background: url("../posts/calgary/imgs/3.jpg") center no-repeat;
+    background-size:cover;
 }
 
 .title_wrapper{

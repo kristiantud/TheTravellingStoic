@@ -14,6 +14,11 @@ html,body {
     background:  linear-gradient(to bottom, #6d5f50, #293628, #181818);
 }
 
+.header.calgary{
+    background: linear-gradient(to bottom, #5e758f,#553b30,#21191c,     #181818);
+}
+
+
 .image_wrapper{
     padding-top: 60px;
 }
@@ -22,7 +27,7 @@ html,body {
     height: auto;
     width: 450px;
     margin:auto;
-    box-shadow: #0c0c0c 15px 15px 15px;
+    box-shadow: #0c0c0c 0 0 30px 5px;
 
 }
 
