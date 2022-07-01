@@ -88,3 +88,26 @@ function changePlayStatusDesktop(symbolIndex){
         }
     }
 }
+
+// add large to the media_posts element
+function large(){
+    const toggleViewLarge = document.getElementsByClassName("large_wrapper");
+    const toggleViewGrid = document.getElementsByClassName("grid_wrapper");
+    const mediaPosts = document.getElementsByClassName("media_posts");
+
+    mediaPosts[0].classList.add("large");
+    toggleViewLarge[0].classList.add("selected");
+    toggleViewGrid[0].classList.remove("selected");
+}
+
+
+function grid(){
+    const toggleViewLarge = document.getElementsByClassName("large_wrapper");
+    const toggleViewGrid = document.getElementsByClassName("grid_wrapper");
+    const mediaPosts = document.getElementsByClassName("media_posts");
+
+    mediaPosts[0].classList.remove("large");
+    toggleViewLarge[0].classList.remove("selected");
+    toggleViewGrid[0].classList.add("selected");
+}
+

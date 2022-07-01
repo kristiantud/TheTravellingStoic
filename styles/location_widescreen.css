@@ -55,9 +55,14 @@ html,body {
     height: 1px;
 }
 
+
 .title_wrapper{
     padding-top: 30px;
     text-align: center;
+}
+
+.toggle_view{
+    display: none;
 }
 
 .media_wrapper{

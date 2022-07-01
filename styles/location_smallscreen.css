@@ -62,6 +62,42 @@ html,body {
     padding-left: 30px;
 }
 
+.toggle_view{
+    float:right;
+    margin-right: 25px;
+    padding-bottom: 5%;
+    display: flex;
+    
+}
+
+.toggle_view div{
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.toggle_view div.selected{
+    background-color: rgb(54, 54, 54);
+}
+
+.large_wrapper{
+
+}
+
+.grid_wrapper{
+    margin-top: -2px;
+}
+
+
+#grid{
+    height: 33px;
+    width: 33px;
+}
+
+#large{
+    height: 30px;
+    width: 30px;
+}
+
 .media_wrapper{
     padding-top: 40px;
     /* margin: 0 15%; */
@@ -78,6 +114,13 @@ html,body {
     columns: 2;
     column-gap: 15px;
     
+}
+
+.media_posts.large{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+    columns: unset;
 }
 
 .media_post_item{
