@@ -19,6 +19,10 @@ html,body {
 
 }
 
+.header.olympics22{
+    background: linear-gradient(to bottom, #965c3c,#e4b2bd, #444c42,  #0c0c0c);
+
+}
 .image_wrapper{
     margin: 0 15%;
     padding-top: 15%;
