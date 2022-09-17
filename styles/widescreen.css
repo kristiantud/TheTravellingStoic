@@ -19,26 +19,31 @@ html, body{
     
 }
 
+#video_background{
+    /* height: 100vh; */
+    margin-top: -105px;
+    width: 100%;
+}
+
 .hero_wrapper{
     text-align: center;
     
     height: 100vh;
-    background: url("../posts/calgary/imgs/3.jpg") center no-repeat;
-    background-size:cover;
+    /* background: url("../posts/calgary/imgs/11111.jpg") center no-repeat;
+    background-size:cover; */
 }
 
 .title_wrapper{
-    
+    position:relative;
     /* display: table-cell;
     vertical-align: middle; */
-    height: 150px;
     width: auto;
-    padding-top: 350px;
-    margin: auto;
+    /* padding-top: 350px; */
     font-size: 100px;
 }
 
 #hero_title{
+    position: absolute;
     text-align:center;
     font-family: 'Cabin Sketch', cursive;
     color: white;

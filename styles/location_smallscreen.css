@@ -23,6 +23,12 @@ html,body {
     background: linear-gradient(to bottom, #965c3c,#e4b2bd, #444c42,  #0c0c0c);
 
 }
+
+.header.jaysbday22{
+    background: linear-gradient(to bottom, #40171E,  #A64724, #0c0c0c);
+    
+}
+
 .image_wrapper{
     margin: 0 15%;
     padding-top: 15%;
@@ -37,26 +43,26 @@ html,body {
 
 
 #title{
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Playfair Display', serif;
     color: white;
-    font-size: 50px;
-    margin-bottom: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
     /* margin-top: 0px; */
     
 }
 
 #subtitle{
     color: white;
-    font-size: 18px;
-    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+    font-family: 'Arsenal', sans-serif;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #title_hr{
     border-style: none;
     width: 70px;
-    background-color: gold;
+    background-color: rgb(4, 131, 61);
     height: 1px;
     margin-left: 0;
 }
