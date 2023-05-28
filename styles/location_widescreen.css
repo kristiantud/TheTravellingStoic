@@ -23,6 +23,15 @@ html,body {
 
 }
 
+.header.jaysbday22{
+    background: linear-gradient(to bottom, #40171E,  #A64724, #181818);
+    
+}
+
+.header.carlobday23{
+    background: linear-gradient(to bottom, #3F2B26,  #594A5B, #4F302F, #181818);
+}
+
 
 .image_wrapper{
     padding-top: 60px;
